@@ -20,7 +20,8 @@ class _HomePageState extends State<HomePage> {
         itemCount: Resources().videoUrls.length,
         itemBuilder: (context, index) => Padding(
           padding: const EdgeInsets.all(10.0),
-          child: VideoListTile(videoUrl: Resources().videoUrls[index]),
+          child: VideoListTile(
+              videoUrl: Resources().videoUrls[index], index: index),
         ),
       ),
     );
